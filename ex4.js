@@ -1,8 +1,8 @@
 // 1- Crie uma função construtora para Terreno, cada terreno deve ter:
-// largura, comprimento, area(largura x comprimento)
+// largura, comprimento, area(largura x comprimento) --PROPRIEDADES
 
 // 2 crie métodos usando o prototype, eles devem ser:
-// - calcularPreco -> que vai ser a area x 1000 reais.
+// - calcularPreco -> que vai ser a area x 1000 reais.    CRIAR PROPRIEDADE PREÇO
 // - mostrarInfos -> que mostrar a area e o preço do terreno.
 
 // 3 - Crie 5 instancias do terreno, usando o operador new. ex: const t1 = new Terreno(arg1, arg2)

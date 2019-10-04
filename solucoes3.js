@@ -66,26 +66,26 @@
 // que retorna randomicamente uma
 // das Strings "FIGHT", "BAG" ou "RUN".
 
-pokemon.action = function() {
-    const frase = ["lutar", "correr","gritar"]
-    const rand = Math.floor((Math.random() * frase.length))
-   console.log(frase[rand])
-}
+// pokemon.action = function() {
+//     const frase = ["lutar", "correr","gritar"]
+//     const rand = Math.floor(Math.random() * frase.length)
+//    return frase[rand]
+// }
    
 
-console.log(pokemon.action());
+// pokemon.action();
 
-// 6.
-// Adicione um método chamado
-// `pergunta` ao seu pokemon que printa
-// no console "O que o  < > vai fazer?" e
-// retorna o resultado do metodo
-// `acao`.
+// // 6.
+// // Adicione um método chamado
+// // `pergunta` ao seu pokemon que printa
+// // no console "O que o  < > vai fazer?" e
+// // retorna o resultado do metodo
+// // `acao`.
 
-pokemon.pergunta = function() {
-  console.log(`O que o ${pokemon.nome} vai fazer?`);
-  console.log(pokemon.action());
-};
+// pokemon.pergunta = function() {
+//   console.log(`O que o ${pokemon.nome} vai fazer?`);
+//   console.log(pokemon.action());
+// };
 
 // console.log(pokemon.pergunta());
 
@@ -101,11 +101,22 @@ pokemon.pergunta = function() {
 // console no seguinte formato:
 // <propriedade>: <valor
 
-for (const item in pokemon) {
-//   if (pokemon[item] !== [Function]) {
-    // console.log(`${item}:${pokemon[item]}`);
-//   } else {
-//     // console.log(`${item}: ${pokemon.pokemon[item]()}`);
-// console.log('deu errado')
-//   }
+
+
+  // for (const key in pokemon) {
+  //   console.log(`Chave:${key}| valor:${pokemon[key]}`)
+  // }
+
+
+  
+//9 Faça uma função construtora de pokemon
+
+function Pokemon(nome, nomeJapa, evolucao) {
+  this.nome = nome
+  this.nomeJapa = nomeJapa
+  this.evolucao = evolucao
 }
+
+const Pokemon1 = new Pokemon("charmander", "hitokage","ovo")
+
+console.log(Pokemon1.nome);
