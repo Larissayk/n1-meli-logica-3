@@ -115,7 +115,7 @@ function terrenosOrdenados (arrTerrenos) {
         return a.preco - b.preco
     })
     console.log(ordenados)
-    console.log(ordenados[0], ordenados[ordenados.length-1])
+    console.log(`Mais barato: ${ordenados[0]}, mais caro: ${ordenados[ordenados.length-1]}`)
 }
 
 terrenosOrdenados(terrenos);
